@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="logo nav-listLi">Devlinks</li>
+                <li class="buttons nav-listLi">
+                    <ul class="nav-btns-list">
+                        <li class="nav_btn login-nav">login</li>
+                        <li class="nav_btn register-nav">Register</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="form-container" >
+            <form action="" class="form loginform active">
+                <div class="frames"></div>
+                <h1 class="title">Login</h1>
+                <div class="input-field" style="margin-top: 15px;">
+                    <label>Username or Email</label>
+                    <input type="text" name="username" id="username" class="username" placeholder="eg: john doe or johndoe@gmail.com" required>
+                    <div class="error name"></div>
+                </div>
+                <div class="input-field" style="margin-top: 15px;">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" class="input" placeholder="********" required>
+                    <div class="error password"></div>
+                </div>
+                <div class="input-field tc">
+                    <!-- <p class="tc-text1">new to devlinks</p> -->
+                    <p class="tc-text2 registerLink">not having account ?</p>
+                </div>
+                <div class="input-field">
+                    <button type="submit" name="login" class="login" id="login">Login</button>
+                </div>
+            </form>
+            <form action="" class="form reisterform">
+                <div class="frames"></div>
+                <h1 class="title">Register</h1>
+                <div class="input-field">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" placeholder="eg: john doe" required>
+                </div>
+                <div class="input-field">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="eg: johndoe@email.com" required>
+                </div>
+                <div class="input-field">
+                    <label>Phone no</label>
+                    <input type="number" name="phoneno" id="phoneno" placeholder="9876543210" required>
+                </div>
+                <div class="input-field imageform">
+                    <label>Images</label>
+                    <input type="file" name="image" id="image" accept="image/*" required>
+                </div>
+                <div class="input-field tc">
+                    <!-- <p class="tc-text1">new to devlinks</p> -->
+                    <p class="tc-text2 loginLink">already having account ?</p>
+                </div>
+                <div class="input-field">
+                    <button type="submit" name="register" id="register">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="right-side">
+            <h1 class="brand-name">DevLinks</h1>
+            <p class="text">
+                &nbsp; &nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Necessitatibus autem itaque perspiciatis cum magnam, 
+                illum numquam reprehenderit inventore eum aperiam quo mollitia. 
+                Aliquam,quo vitae accusamus quibusdam illum officiis consectetur.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

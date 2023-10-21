@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinoth - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">DevLinks</div>
+        <div class="username">Vinoth</div>
+        <div class="btn">
+            <a href="logout.php" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    <main class="main-container">
+        <div class="sepratescreen left-top">
+            <div class="profile">
+                <img src="/spidy.jpg" alt="profile" class="img"/>
+            </div>
+            <div class="btn-container">
+                <button class="button details" type="submit">personal details</button>
+                <button class="button accounts" type="submit">accounts</button>
+            </div>
+        </div>
+        <div class="sepratescreen right-bottom">
+            <form action="#" class="updatedetails details-list setactive">
+                <div class="seperate-list">
+                    <div class="field">
+                        <label class="disp-label">Name :</label>
+                        <input class="value name" value="Vinoth">
+                    </div>
+                    <div class="field">
+                        <label class="disp-label">Phone Number :</label>
+                        <input class="phno value" value="9384460843">
+                    </div>
+                </div>
+                <div class="seperate-list">
+                    <div class="field">
+                        <label class="disp-label">Email :</label>
+                        <input class="value email" value="Vinothg0618@gmail.com">
+                    </div>
+                    <div class="field">
+                        <label class="disp-label">Address :</label>
+                        <textarea class="address value" value="                            7089, North street, sathipattu, panruti[tk], cuddalore[dist]">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="seperate-list sma-input">
+                    <div class="field">
+                        <label class="disp-label">Instagram :</label>
+                        <input class="value name" placeholder="https://instagram/account-name">
+                    </div>
+                    <div class="field">
+                        <label class="disp-label">Facebook :</label>
+                        <input class="phno value" placeholder="https://facebook/account-name">
+                    </div>
+                    <div class="field">
+                        <label class="disp-label">Twitter :</label>
+                        <input class="phno value" placeholder="https://twitter/account-name">
+                    </div>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="updatebtn" name="update">Update details</button>
+                    <button type="button" class="cancelbtn">cancel</button>
+                </div>
+            </form>
+
+            <div class="personal-details active setactive">
+                <div class="edit-btn">edit</div>
+                <h1 class="title">Personal details</h1>
+                <div class="details-list">
+                    <div class="seperate-list">
+                        <div class="field">
+                            <label class="disp-label">Name :</label>
+                            <p class="value name">Vinoth</p>
+                        </div>
+                        <div class="field">
+                            <label class="disp-label">Phone Number :</label>
+                            <p class="phno value">9384460843</p>
+                        </div>
+                    </div>
+                    <div class="seperate-list">
+                        <div class="field">
+                            <label class="disp-label">Email :</label>
+                            <p class="value name">Vinothg0618@gmail.com</p>
+                        </div>
+                        <div class="field">
+                            <label class="disp-label">Address :</label>
+                            <p class="phno value">
+                                7089, North street, sathipattu, panruti[tk], cuddalore[dist]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="socila-media-accounts">
+                    <h1 class="title-sma">social media accounts</h1>
+                    <ul class="sma-accounts-list">
+                        <li class="sma-list instagram">I</li>
+                        <li class="sma-list twitter">X</li>
+                        <li class="sma-list facebook">F</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="account-details setactive">
+                <h1 class="title">Accounts Details</h1>
+                <div class="head">
+                    <p class="head-nav noOfAccounts">No Of Accounts #00</p>
+                    <p class="head-nav addaccount">+ add</p>
+                    <p class="head-nav share">share me</p>
+                </div>
+                <ul class="accounts-display-list">
+                    <li class="list">
+                        <a href="#" class="link others" target="_blank">Your account will be shown here</a>
+                        <div class="del">del</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account-form-conatiner setactive">
+                <form action="" method="post" class="account-form ">
+                    <div class="input-field">
+                        <label class="label">select your account</label>
+                        <select name="account" id="account" class="selectinput" required>
+                            <option value="">select account</option>
+                            <option value="github">GitHub</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="youtube">YouTube</option>
+                            <option value="stackoverflow">Stack Overflow</option>
+                            <option value="medium">Medium</option>
+                            <option value="portfolio">Portfolio</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label><span id="selected-account"></span> Account Link</label>
+                        <input type="link" name="link" id="link" class="selectinput" required>
+                    </div>
+                    <div class="btns-container">
+                        <button type="submit" name="account" class="button">set</button>
+                        <button type="button" class="button cancel">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>

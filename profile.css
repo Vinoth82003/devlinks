@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-page{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    position: absolute;
+}
+
+.profile-container{
+    min-width: 500px;
+    min-height: 300px;
+    padding: 10px 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #a5a5a5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-profile{
+    display: flex;
+    gap: 10px;
+}
+
+.profile-img{
+    width:  120px;
+    height: 120px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+}
+
+.personal-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    margin: 0px;
+    border-left: 2px solid #a5a5a5;
+    padding: 10px;
+    list-style: none;
+}
+
+.details-list{
+    text-transform: capitalize;
+}
+
+.bottom-profile{
+    margin-top: 5px;
+    width: 100%;
+    border-top: 2px solid #a5a5a5;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.role-text{
+    padding: 10px 20px;
+    background: #64ffa5;
+    min-width: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #0fc55b;
+    color: #004e21;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.accounts-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.account-count{
+    text-decoration: underline;
+}
+
+.accounts-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.link{
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    width: calc(100%/3);
+    border: 2px solid #ddd;
+}
+
+
+
+.github{
+    background: rgb(44, 44, 44);
+    --clr : #ffffff;
+    color: var(--clr);
+}
+
+.linkedin{
+    background: #0144d4;
+    --clr: #ffffff;
+    color: var(--clr);
+}
+
+.youtube{
+    background: red;
+    --clr: #ffffff;
+    color: var(--clr);
+}
+
+.portfolio{
+    background: #616161;
+    --clr: #3dffff;
+    color: var(--clr);
+}
+
+.stackoverflow{
+    background: #333333;
+    --clr: #dbdb01;
+    color: var(--clr);
+}
+
+.medium{
+    background: #000;
+    --clr: #ffa500;
+    color: var(--clr);
+}
+
+.link:hover{
+    box-shadow: 0px 0px 20px #000;
+    border: 2px solid var(--clr);
+}
